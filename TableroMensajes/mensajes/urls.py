@@ -1,15 +1,9 @@
 from django.urls import path
-from django.views.generic import TemplateView
+from .views import ver_mensajes, index
 
 app_name = 'mensajes'
 
 urlpatterns = [
-    path('',
-         TemplateView.as_view(template_name='mensajes/index.html'),
-         name='index'
-         ),
-    path('recibidos/',
-          TemplateView.as_view(template_name='mensajes/recibidos.html'),
-          name='recibidos'
-          )
+    path('', index,name='index'),
+    path('recibidos/', ver_mensajes, name='ver_mensajes'),
 ]

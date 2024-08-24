@@ -9,13 +9,14 @@
 <body>
     <div class="container mt-5">
         <h1 class="text-center">Mensajes</h1>
+        
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Remitente</th>
                     <th>Destinatario</th>
                     <th>Mensaje</th>
-                    <th>Fecha y Hora</th>
+                    <th>Fecha</th>
                 </tr>
             </thead>
             <tbody>
@@ -24,7 +25,7 @@
                     <td>{{ mensaje.remitente }}</td>
                     <td>{{ mensaje.destinatario}}</td>
                     <td>{{ mensaje.texto }}</td>
-                    <td>{{ mensaje.fecha_hora|date:"d/m/Y H:i" }}</td>
+                    <td>{{ mensaje.fecha_hora|date:"d/m/Y" }}</td>
                 </tr>
                 {% empty %}
                 <tr>
@@ -37,6 +38,6 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"></script>
 </body>
 </html>

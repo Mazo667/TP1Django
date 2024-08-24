@@ -1,10 +1,14 @@
 from django.db import models
+from django.utils import timezone
 
 # Create your models here.
 class Mensaje(models.Model):
-    texto = models.TextField
     remitente = models.CharField(max_length=255)
     destinatario = models.CharField(max_length=255)
-    fecha_hora = models.DateField
+    texto = models.TextField()
+    fecha_hora = models.DateField(default=timezone.now)
+
+    def __str__(self):
+        return f"{self.remitente} a {self.destinatario}: {self.texto}"
 
     
