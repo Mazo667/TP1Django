@@ -1,6 +1,8 @@
 <h1>TP1 PROGRAMACION WEB II</h1>
 <img src="https://repository-images.githubusercontent.com/846279650/d79e0e36-83bc-4539-8593-2e99cbd0aed2" alt="logo">
 
+[Informe realizado](Informe Trabajo Practico I Web.pdf)
+
 <h4>VERSIONES USADAS</h4>
 <li>python 3.12</li>
 <li>Django 5.1</li>
